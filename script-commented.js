@@ -33,10 +33,12 @@ function triggerAlert() {
 
 function makeEmDoStuff() {
   /* define references to each of our interactive input HTMLElements, by using document.getElementById, passing the ID string */
-  const textInput = document.getElementById("textInput");
-  const textColorInput = document.getElementById("textColorInput");
-  const backgroundColorInput = document.getElementById("backgroundColorInput");
-  const damnButton = document.getElementById("damnButton");
+  const textInput = document.getElementById("text-input");
+  const textColorInput = document.getElementById("text-color-input");
+  const backgroundColorInput = document.getElementById(
+    "background-color-input"
+  );
+  const damnButton = document.getElementById("damn-button");
 
   /* on each input, add an "event listener"; each input listens for different type of event (the first argument) and calls a function named in the second argument when that event is fired */
   /* textInput listens for "input" events, which fire when keys are pressed on a focused input; calls "updateText" when they happen */

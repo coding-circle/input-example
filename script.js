@@ -22,10 +22,12 @@ function triggerAlert() {
 }
 
 function makeEmDoStuff() {
-  const textInput = document.getElementById("textInput");
-  const textColorInput = document.getElementById("textColorInput");
-  const backgroundColorInput = document.getElementById("backgroundColorInput");
-  const damnButton = document.getElementById("damnButton");
+  const textInput = document.getElementById("text-input");
+  const textColorInput = document.getElementById("text-color-input");
+  const backgroundColorInput = document.getElementById(
+    "background-color-input"
+  );
+  const damnButton = document.getElementById("damn-button");
 
   textInput.addEventListener("input", updateText);
   textColorInput.addEventListener("change", updateTextColor);
