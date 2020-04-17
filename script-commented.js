@@ -49,4 +49,7 @@ function makeEmDoStuff() {
   damnButton.addEventListener("click", triggerAlert);
 }
 
+/* the "window" object (referring to your browser window) listens for "load" events; calls "makeEmDoStuff" when they happen.  */
+/* why do we do this? because we can't access inputs on the page and change their properties if the inputs haven't finished loading. */
+/* the window.onload event triggers as soon as all assets have finished downloading  */
 window.addEventListener("load", makeEmDoStuff);
