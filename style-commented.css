@@ -17,6 +17,18 @@ article {
   margin: auto;
 }
 
+/* select the element with id="page-title" (in this case its the <h1>) */
+#page-title {
+  /* Set the font for the page title to default to "-apple-system", which tells MacOS to use its system font for the heading -- That font is "San Francisco" and it is nice. If you are on a PC, you won't have that font, or an Android phone. So you provide a list of fallback fonts. "Segoe UI" is the Windows 10 system font. */
+  font-family: -apple-system, BlinkMacSystemFont, “Segoe UI”, “Roboto”, “Oxygen”,
+    “Ubuntu”, “Cantarell”, “Fira Sans”, “Droid Sans”, “Helvetica Neue”,
+    sans-serif;
+  /* fonts on the web are complicated, since you either have to provide them in some way, or depend on them being installed on user machines */
+
+  /* adds both an underline and an overline decoration. <a> tags have text-decoration: underline set byy default, thats why they are always underlined */
+  text-decoration: underline overline;
+}
+
 /* "article > label" means: "select all <label>s that are immediate descendants of an article" */
 article > label {
   /* Change the display property to treat these labels as blocks that can sit inline with other elements */
