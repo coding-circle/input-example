@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Inputs!</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <article>
+      <h1>Inputs!</h1>
+      <p>
+        These are generic text/data fields that come free with HTML. Definitely
+        not exciting, but they are very useful for building applications. They
+        come in several different "<a
+          href="https://developer.mozilla.org/en-US/docs/Learn/Forms/HTML5_input_types"
+          >types</a
+        >", and can be given default "values".
+      </p>
+      <label for="textInput">text input</label>
+      <input id="textInput" type="text" value="Steamed Hams" />
+      <p>
+        This one is the default. Characters appear when you type if the input is
+        in focus. The &lt;input&gt;'s internal value is updated as you enter
+        characters. All inputs store their values inside "value" as text, but
+        some store it in different text formats, and restrict the type of input
+        they accept in different ways. Here are some common input types:
+      </p>
+      <label for="numberInput">number input</label>
+      <input id="numberInput" type="number" value="69420" />
+      <p>
+        Typing a-z characters isn't prevented by default, but the input will
+        display an error state. Number inputs come with increment/decrement
+        buttons, but are otherwise not very useful.
+      </p>
+      <label for="emailInput">email input</label>
+      <input id="emailInput" type="email" value="peanut@harvard.edu" />
+      <p>
+        Displays an error state if not a valid email address. If you navigate to
+        another page in this directory, your browser might try to save these
+        credentials for this website! Your browser looks for inputs with
+        type="email" or type="password" to provide such conveniences.
+      </p>
+      <label for="passwordInput">password input</label>
+      <input id="passwordInput" type="password" value="friends" />
+      <p>
+        Hides characters being typed. The value is still accessible in the DOM
+        though.
+      </p>
+      <label for="dateInput">date input</label>
+      <input id="dateInput" type="date" value="2012-12-21" />
+      <p>
+        Here's a fancy date picker that your browser provides to make it easier
+        to enter date values
+      </p>
+      <label for="colorInput">color input</label>
+      <input id="colorInput" type="color" value="" />
+      <p>
+        This one uses your Operating System's default color picker widget
+      </p>
+      <label for="fileInput">file input</label>
+      <input id="fileInput" type="file" value="" />
+      <p>
+        Launches a native File Explorer window to select a file. The file chosen
+        file isn't stored inside this element -- just a file path. And that file
+        path also appears fake if you inspect it! Your browser shouldn't give
+        random websites visibility into your computer's file system so it
+        obfuscates this.
+      </p>
+      <hr />
+      <p>
+        The blue <label>label</label> elements have a purpose too! A
+        &lt;label&gt; provides a semantic hook for who or whatever is reading
+        the document to understand the purpose of any &lt;input&gt;s, as their
+        type and default value doesn't communicate much. They are used by screen
+        reading technology like Apple voiceOver to aid in webpage accessibility
+        -- how would you navigate an online form if the inputs weren't labelled
+        and your eyes are no good?
+      </p>
+      <p>
+        Another nice UX bonus: if you set the "for" attribute of a &lt;label
+        for="Mitch"&gt; to the same value of another &lt;input id="Mitch"&gt;,
+        clicking on that label will focus your keyboard on the corresponding
+        input, or activate it if there's no keyboad interaction
+      </p>
+      <a href="page2.html" class="right-aligned-link">Go on...</a>
+    </article>
+  </body>
+</html>

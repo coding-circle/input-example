@@ -1,0 +1,85 @@
+body {
+  /* Set the default background color to a named color. See more here: https://www.w3schools.com/colors/colors_names.asp */
+  background-color: PapayaWhip;
+  /* Set the default text color to a hex value */
+  color: #808080;
+  /* Make all text inside of body display with a monospaced font  */
+  font-family: monospace;
+  /* Set the base font size to 16px tall */
+  font-size: 16px;
+}
+
+/* select all <article> elements */
+article {
+  /* Set the width of the <article> element to 80 characters */
+  width: 80ch;
+  /* Center this article. One of many ways to center a block-level element with CSS -- set the left and right margins to "auto". pretty weird. CSS is hard. */
+  margin: auto;
+}
+
+/* "article > label" means: "select all <label>s that are immediate descendants of an article" */
+article > label {
+  /* Change the display property to treat these labels as blocks that can sit inline with other elements */
+  display: inline-block;
+  /* Because these labels are now set as blocks (from above), we can give them defined width and height values. Make the width of these labels 20 characters wide */
+  width: 20ch;
+  /* Set the height of these labels to 1.5x the height of the base font size. 1 "em" in this case equals "16px", because we set the default font size on the body to 16px. Typographic units! */
+  height: 1.5em;
+}
+
+label {
+  /* I've never been to a Dodger's game... */
+  color: DodgerBlue;
+}
+
+/* "p + label" means: "select all <label>s that are immediate siblings of a <p>" */
+p + label {
+  /* set only the top margin to be 4x the font height */
+  margin-top: 3em;
+}
+
+/* "a, a:visited" means: "select all <a>s, and also all <a>s that have been clicked on already" */
+a,
+a:visited {
+  color: LightCoral;
+}
+
+/* "a:hover" means: "select all <a>s that currently have the mouse cursor hovering over them" */
+a:hover {
+  color: DarkRed;
+}
+
+/* "a.right-aligned-link, a.left-aligned-link" means: "select all <a>s that have a class of 'right-aligned-link' or 'left-aligned-link'" */
+a.right-aligned-link,
+a.left-aligned-link {
+  /* change the display property to treat each of these elements as a block, but one that will not sit inline with other elements. */
+  display: block;
+  /* set the top and bottom margins to 2x the font height, and the left and right margins to 0 */
+  margin: 2em 0;
+  /* set internal padding to 4px on all sides */
+  padding: 4px;
+
+  background-color: LightCoral;
+  color: white;
+
+  /* make the font bold */
+  font-weight: bold;
+  /* make the text ALL CAPS without having to re-type it */
+  text-transform: uppercase;
+}
+
+a.right-aligned-link {
+  /* Because this link was made to be block-level (above), this element will fill all the available space inside article, and it will now respect text alignment rules. */
+  text-align: right;
+}
+
+a.left-aligned-link {
+  /* Same story. Because this link was made to be block-level (above), this element will fill all the available space inside article, and it will now respect text alignment rules. */
+  text-align: left;
+}
+
+/* hr refers to the line, a "horizontal rule" */
+hr {
+  /* set the top and bottom margins to 2x the font height, and the left and right margins to 0 */
+  margin: 2em 0;
+}
